@@ -14,7 +14,7 @@ import com.yosanai.web.model.LocationsRequest;
 public class LocationsController {
 
 	@RequestMapping(value = "/atmsNearby", method = RequestMethod.POST, produces = "application/json")
-	public @ResponseBody ATMLocations helloRESTGet(@RequestBody LocationsRequest req) throws Exception {
+	public @ResponseBody ATMLocations atmsNearby(@RequestBody LocationsRequest req) throws Exception {
 		RequestMap map = new RequestMap();
 		map.set("PageLength", "5");
 		map.set("PageOffset", "0");
